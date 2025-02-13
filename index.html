@@ -4,47 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonBae Creations</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Link to the color book -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external stylesheet -->
 </head>
 <body>
     <!-- Header Section -->
-    <header style="background-color: #f8d0d1; text-align: center; padding: 20px;">
-        <h1 style="color: #D4AF37; font-family: 'Arial', sans-serif;">Welcome to MoonBae Creations</h1>
-        <p style="color: #333; font-size: 18px;">Explore our digital products, journals, and adult coloring books.</p>
-           <!-- Navigation Links -->
-    <nav>
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-            <li style="margin: 0 20px;"><a href="index.html" style="color: #D4AF37; text-decoration: none; font-size: 18px;">Home</a></li>
-            <li style="margin: 0 20px;"><a href="contact.html" style="color: #D4AF37; text-decoration: none; font-size: 18px;">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Welcome to MoonBae Creations</h1>
+        <p>Explore our digital products, journals, and adult coloring books.</p>
+    </header>
 
     <!-- Main Content Section -->
-    <section style="padding: 20px;">
-        <h2 style="color: #D4AF37; text-align: center;">Our Products</h2>
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <section>
+        <h2>Our Products</h2>
+        <div class="product-container">
             <!-- Product 1 -->
-            <div style="background-color: #fff0f1; padding: 20px; border: 2px solid #D4AF37; margin: 10px; width: 200px;">
-                <h3 style="color: #D4AF37; text-align: center;">Digital Products</h3>
-                <p style="text-align: center;">E-books, printable planners, and more.</p>
+            <div class="product">
+                <h3>Digital Products</h3>
+                <p>E-books, printable planners, and more.</p>
             </div>
             <!-- Product 2 -->
-            <div style="background-color: #fff0f1; padding: 20px; border: 2px solid #D4AF37; margin: 10px; width: 200px;">
-                <h3 style="color: #D4AF37; text-align: center;">Journals</h3>
-                <p style="text-align: center;">Beautifully designed physical journals for every purpose.</p>
+            <div class="product">
+                <h3>Journals</h3>
+                <p>Beautifully designed physical journals for every purpose.</p>
             </div>
             <!-- Product 3 -->
-            <div style="background-color: #fff0f1; padding: 20px; border: 2px solid #D4AF37; margin: 10px; width: 200px;">
-                <h3 style="color: #D4AF37; text-align: center;">Adult Coloring Books</h3>
-                <p style="text-align: center;">Relaxing and creative coloring books for adults.</p>
+            <div class="product">
+                <h3>Adult Coloring Books</h3>
+                <p>Relaxing and creative coloring books for adults.</p>
             </div>
         </div>
     </section>
 
+    <!-- Contact Form Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer Section -->
-    <footer style="background-color: #f8d0d1; text-align: center; padding: 20px;">
-        <p style="color: #333;">&copy; 2025 MoonBae Creations - All Rights Reserved</p>
+    <footer>
+        <p>&copy; 2025 MoonBae Creations - All Rights Reserved</p>
     </footer>
 </body>
 </html>
