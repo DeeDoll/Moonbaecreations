@@ -1,127 +1,105 @@
-/* Global Body Styles */
+/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f8d0d1, #D4AF37); /* Soft pink to gold gradient */
-    color: #333;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    background: linear-gradient(135deg, rgba(255, 224, 224, 0.8), rgba(255, 240, 240, 0.9)); /* Soft pink gradient */
+    color: #333;
 }
 
-/* Header Section */
-header {
+/* Header Styling */
+.header {
     text-align: center;
-    padding: 80px 20px;
-    background: transparent;
-    position: relative;
-    z-index: 1;
-}
-
-header h1 {
-    font-size: 48px;
-    color: #fff;
-    margin: 0;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-header p {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
-    margin-top: 10px;
-    opacity: 0.8;
-}
-
-/* Main Content Section */
-section {
-    max-width: 1000px;
-    margin: 80px auto;
     padding: 50px;
-    background: #fff;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    backdrop-filter: blur(10px); /* Subtle blur effect */
+    background-color: rgba(255, 224, 224, 0.9); /* Light pink background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.product-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px 0;
+.header h1 {
+    color: #D4AF37; /* Gold color for the header text */
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
 }
 
-.product {
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid #D4AF37;
-    padding: 30px;
-    width: 250px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+.header p {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /* Contact Form Section */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.contact-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #D4AF37;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .contact-form label {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #D4AF37;
+    text-align: left;
     display: block;
+    margin-bottom: 5px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     font-size: 16px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #D4AF37;
-    background-color: #fff0f1; /* Pale Pink Background */
-    transition: all 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #f8d0d1; /* Light Pink on Focus */
-    box-shadow: 0 0 8px rgba(255, 192, 203, 0.5); /* Soft Glow */
+    border: 2px solid #D4AF37;
+    border-radius: 6px;
+    background-color: #f8f0f1;
 }
 
 .contact-form button {
-    padding: 15px 30px;
-    background-color: #D4AF37;
-    color: white;
-    border: none;
-    border-radius: 8px;
+    padding: 12px 30px;
     font-size: 18px;
+    background-color: #D4AF37;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #e2b22f; /* Darker Gold on Hover */
+    background-color: #c19a4a; /* Slightly darker gold for hover */
 }
 
-/* Footer Section */
-footer {
+/* Footer Styling */
+.footer {
+    background-color: rgba(255, 224, 224, 0.9);
     text-align: center;
     padding: 20px;
-    background-color: #f8d0d1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
     color: #333;
+    margin: 0;
+}
+
+/* Add some animations for the form */
+.contact-form input, .contact-form textarea {
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #D4AF37;
+    outline: none;
 }
