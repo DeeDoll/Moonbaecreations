@@ -1,89 +1,128 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background: #fde4e4;
+    background: linear-gradient(to bottom, #e0d4f7, #fff6eb);
+    color: #4a4a4a;
     text-align: center;
 }
 
-/* Header */
-header {
-    background-color: #f8d0d1;
-    text-align: center;
-    padding: 8px;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(72, 61, 139, 0.8);
+    padding: 10px 20px;
 }
 
-header h1 {
-    font-size: 22px;
+.menu-toggle {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
     font-weight: bold;
-    color: #D4AF37;
+    transition: 0.3s;
 }
 
-header p {
-    font-size: 14px;
-    margin-top: 5px;
+.nav-links a:hover {
+    color: #ffd700;
 }
 
 /* Hero Section */
-.hero img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.hero {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #483d8b;
 }
 
 .hero p {
     font-size: 16px;
-    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* Shop Section */
-.shop h2 {
-    font-size: 20px;
-    color: #D4AF37;
-}
-
-.shop p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
+/* Button */
 .shop-btn {
     display: inline-block;
-    background-color: #D4AF37;
-    color: white;
-    padding: 12px 20px;
+    background: #ffd700;
+    color: #4a4a4a;
+    padding: 12px 24px;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 16px;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #f4c430;
+}
+
+/* Collection Section */
+.collection {
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.collection h2 {
+    font-size: 22px;
+    color: #483d8b;
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: rgba(72, 61, 139, 0.8);
     color: white;
     padding: 10px;
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
-    header {
-        padding: 15px;
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
     }
 
-    header h1 {
-        font-size: 28px;
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(72, 61, 139, 0.9);
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        padding: 10px 0;
     }
 
-    header p {
-        font-size: 16px;
+    .nav-links.active {
+        display: flex;
     }
 
-    .shop h2 {
-        font-size: 24px;
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
     }
 }
