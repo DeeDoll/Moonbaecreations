@@ -1,0 +1,40 @@
+/* Body: Make the background pale pink */
+body {
+    background-color: #f8d0d1;  /* Pale Pink */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headers: Make them gold and special */
+h1, h2, h3 {
+    color: #D4AF37; /* Gold */
+    text-align: center;
+}
+
+/* Links: Make them gold too */
+a {
+    color: #D4AF37; /* Gold */
+    text-decoration: none;
+}
+
+/* Add a little style to the text */
+p {
+    font-size: 16px;
+    color: #333; /* Dark gray for text */
+    text-align: center;
+}
+
+/* Add a little space and style to buttons (if we use any in the future) */
+button {
+    background-color: #D4AF37; /* Gold */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b78f2d; /* A darker gold for hover */
+}
